@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 1;
+}
+img{
+    width: 100%;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.cohete{
+    width: 30%;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+}
+.nube1{
+    background-image: url('../img/cloud-gd460dcc58_1280.png');
+    background-size: 100% 100%;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    animation-name: movimiento1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimiento1{
+    from{
+        margin-top: -10%;
+    }
+    to{
+        margin-top: 50%;
+    }
+}
+.destacado{
+    font-family: cursive;
+    text-align: center;
+    color: #002496;
+    background-color: #f6f6f8;
+    padding: 20px;
+}
+#usuario{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
